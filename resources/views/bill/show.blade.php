@@ -56,7 +56,7 @@
 
 <div class="col s12 m12 l6">
     	<div class="card-panel">
-    		<h4 class="header2">Nuevo</h4>
+    		<h4 class="header2">Agregar Producto</h4>
     		<div class="row">
 		         <form class="col s12" action="{{route('detailbill.store')}}" method="POST">
    @csrf
@@ -78,7 +78,7 @@
               @if($productinventory->id == $detailbill->product_inventory_id)
               selected="selected"
               @endif
-              @endif>{{$productinventory->id}}</option>
+              @endif>{{$productinventory->id}} {{$productinventory->products->name}}</option>
         @endforeach
       </select>
   </div>
@@ -106,6 +106,7 @@
 		    </div>
     	</div>
     </div>
+
 
 <!-- FIN CREAR PRODUCTO-->
 

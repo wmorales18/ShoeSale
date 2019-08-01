@@ -58,7 +58,7 @@ class BillController extends Controller
         $request['user_id'] = Auth::User()->id;
         Bill::create($request->all());
 
-        return redirect()->route('bill.index')->with('Correcto','Factura Agregada');
+        return redirect()->route('bill.show', $request['id'])->with('Correcto','Factura Agregada');
     }
 
     /**

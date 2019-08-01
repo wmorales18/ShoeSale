@@ -149,6 +149,6 @@ class ShippingProductController extends Controller
             return redirect()->route('shippingproduct.index')->with('Incorrecto',$qe->getMessage());
         }
 
-        return redirect()->route('shippingproduct.index')->with('Correcto','Envio Producto eliminado');
+        return redirect()->route('shipping.index')->with('Correcto','Envio Producto eliminado');
     }
 }

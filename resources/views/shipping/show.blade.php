@@ -34,7 +34,7 @@
 	    <h6 class="collection-header m-0">Envio</h6>
 	    <p>{{$shipping->description}}</p>
 	    <p>{{$shipping->date}}</p>
-	    <p>{{$shipping->total}}</p>
+	    <p>CANTIDAD: {{$shipping->total()}}</p>
 
 	  </li>
 	  <li class="collection-item">
@@ -44,7 +44,7 @@
 	          <strong>ID</strong> {{$shipping->id}}</p>
 	          <strong>Descripcion</strong> {{$shipping->description}}</p>
 	          <strong>Fecha</strong> {{$shipping->date}}</p>
-	          <strong>Total</strong> {{$shipping->total}}</p>
+	          <strong>Cantidad Productos</strong> {{$shipping->total()}}</p>
 	      </div>
 	    </div>
 	  </li>
@@ -75,7 +75,7 @@
 <div class="row">
   <div class="input-field ">
     <select class="select2_a col s12" name="type_shipping_id" required="required">
-          <option  disabled value="" selected>Tipo Envio</option>
+          <option  disabled value="" selected>Estatus</option>
         @foreach($typeshippings as $typeshipping)
           <option value="{{$typeshipping->id}}"
               @if(isset($shippingproduct->type_shipping_id))

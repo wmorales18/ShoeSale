@@ -71,6 +71,7 @@ class DetailBillController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function show($id)
     {
         //
@@ -113,7 +114,7 @@ class DetailBillController extends Controller
           $request->validate([
            'quantity' => 'required',
             'bill_id' => 'required',
-            
+            'subtotal' => 'required',
             'product_inventory_id' => 'required'
                     ]);
 

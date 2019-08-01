@@ -9,6 +9,7 @@ class DetailBill extends Model
      protected $fillable = [
     	'id',
     	'quantity',
+        'subtotal',
     	'bill_id',
     	'product_inventory_id'
     	

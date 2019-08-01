@@ -9,12 +9,23 @@ class Shipping extends Model
      protected $fillable = [
     	'id',
     	'description',
-    	'date',
-    	'total_product'
+    	'date'
     	 ];
 
 	public function ShippingProducts(){
     		return $this->hasMany(ShippingProduct::class,'shipping_id','id');
+ 
+   }
+
+   public function total(){
+       $total=0;
+       foreach ($this->shippingproducts as $ShippingProduct) {
+         $total+=$ShippingProduct->quantity;
+
+       }
+       return round($total);
     }
+
+    
 }
 

@@ -18,7 +18,7 @@
               @if($client->id == $bill->client_id)
               selected="selected"
               @endif
-              @endif>{{$client->id}} {{$client->name}}</option>
+              @endif>{{$client->id}} {{$client->name}} {{$client->surname}}</option>
   			@endforeach
   		</select>
 	</div>

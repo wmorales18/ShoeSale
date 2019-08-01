@@ -36,7 +36,7 @@
 	          <th>ID</th>
 	          <th>Descripcion</th>
 	          <th>Fecha</th>
-	          <th>Total</th>
+	          <th>Cantidad Productos</th>
 	          <th>Opciones</th>
 	        </tr>
 	      </thead>
@@ -45,7 +45,7 @@
 	         <th>ID</th>
 	          <th>Descripcion</th>
 	          <th>Fecha</th>
-	          <th>Total</th>
+	          <th>Cantidad Productos</th>
 	          <th>Opciones</th>
 	        </tr>
 	      </tfoot>
@@ -55,7 +55,7 @@
 	          <td>{{$shipping->id}}</td>
 	          <td>{{$shipping->description}}</td>
 	          <td>{{$shipping->date}}</td>
-	          <td>{{$shipping->total_product}}</td>
+	          <td>{{$shipping->total()}}</td>
 	          <td>
 	          	<div class="form-group col s12">
 

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Client;
+use App\Bill;
 class ClientController extends Controller
 {
     /**
@@ -50,7 +51,8 @@ class ClientController extends Controller
 
         Client::create($request->all());
 
-        return redirect()->route('client.index')->with('Correcto','Cliente Agregado');
+        return redirect()->route('bill.create')->with('Correcto','Cliente Agregado');
+        //return redirect()->route('bill.show', $request['bill_id'])->with('Correcto','Detalle Factura Agregado');
 
 
     }

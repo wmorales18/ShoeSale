@@ -27,7 +27,7 @@ class Bill extends Model
     public function total(){
        $total=0;
        foreach ($this->detailbills as $DetailBill) {
-         $total+=$DetailBill->subtotal;
+         $total+=$DetailBill->total;
 
        }
        return round($total,2);
