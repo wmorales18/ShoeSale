@@ -41,7 +41,7 @@
 	        <p class="collections-title">
 	          <strong>ID</strong> {{$detailbill->id}}</p>
 	          <strong>Cantidad</strong> {{$detailbill->quantity}}</p>
-	          <strong>Subtotal</strong> {{$detailbill->subtotal}}</p>
+	          <strong>Subtotal</strong> {{$detailbill->productinventories->sale_price * $detailbill->quantity}}</p>
 	          <strong>Producto Inventario</strong> {{$detailbill->productinventories->id}}</p>
 	          <strong>Factura</strong> {{$detailbill->bills->id}}</p>
 	      </div>

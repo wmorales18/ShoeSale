@@ -56,7 +56,7 @@
 	        <tr>
 	          <td>{{$detailbill->id}}</td>
 	          <td>{{$detailbill->quantity}}</td>
-	          <td>{{$detailbill->subtotal}}</td>
+	          <td>{{$detailbill->productinventories->sale_price * $detailbill->quantity}}</td>
 	          <td>{{$detailbill->productinventories->id}}</td>
 	          <td>{{$detailbill->bills->id}}</td>
 	          <td>

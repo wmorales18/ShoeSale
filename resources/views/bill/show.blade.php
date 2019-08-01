@@ -151,7 +151,7 @@
 	          <td>{{$detailbill->productinventories->products->name}}</td>
 	          <td>{{$detailbill->quantity}}</td>
 	          <td>{{$detailbill->productinventories->sale_price}}</td>
-	          <td>{{$detailbill->subtotal}}</td>
+	          <td>{{$detailbill->productinventories->sale_price * $detailbill->quantity}}</td>
 	          
 	          
 	          <td>

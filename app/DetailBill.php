@@ -9,7 +9,6 @@ class DetailBill extends Model
      protected $fillable = [
     	'id',
     	'quantity',
-    	'subtotal',
     	'bill_id',
     	'product_inventory_id'
     	
@@ -22,4 +21,14 @@ class DetailBill extends Model
     public function productinventories(){//////nombreHija Plural
     		return $this->belongsTo(ProductInventory::class,'product_inventory_id','id');
     }
+    public function subtotal(){
+        $subtotal=0;
+       
+         $subtotal=$request['quantity'];
+
+   
+       return round($subtotal,2);
+    }
+
+
 }

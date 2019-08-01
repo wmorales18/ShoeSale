@@ -112,15 +112,15 @@ class DetailBillController extends Controller
 
           $request->validate([
            'quantity' => 'required',
-            'subtotal' => 'required',
             'bill_id' => 'required',
+            
             'product_inventory_id' => 'required'
                     ]);
 
-
         DetailBill::find($id)->update($request->all());
+        
+        return redirect()->route('bill.show', $request['bill_id'])->with('Correcto','Detalle Factura Actualizado');
 
-        return redirect()->route('detailbill.index')->with('Correcto','Detalle Factura Actualizado');
     }
 
     /**
