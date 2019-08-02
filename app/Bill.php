@@ -32,4 +32,6 @@ class Bill extends Model
        }
        return round($total,2);
     }
+
+
 }

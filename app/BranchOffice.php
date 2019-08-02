@@ -43,5 +43,15 @@ class BranchOffice extends Model
        return round($totalnomina,2);
         }
 
+
+        public function totalproducto(){
+       $totalproducto=0;
+       foreach ($this->productinventories as $productinventory) {
+         $totalproducto+=$productinventory->sale_price*$productinventory->quantity;
+
+       }
+       return round($totalproducto,2);
+        }
+
     
 }

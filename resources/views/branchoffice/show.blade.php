@@ -38,6 +38,7 @@
 	    <p>{{$branchoffice->address}}</p>
 	    <strong>Total costo Activos</strong> {{$branchoffice->totalactivo()}}</p>
 	    <strong>Total costo Nomina</strong> {{$branchoffice->totalnomina()}}</p>
+	    <strong>Total en Producto</strong> {{$branchoffice->totalproducto()}}</p>
 
 	  </li>
 	  <li class="collection-item">

@@ -81,7 +81,7 @@
           <li class="active"><a href="/dashboard">Dashboard</a></li>
         </ul>
         <ul id="Pagesdropdownb" class="dropdown-content dropdown-horizontal-list">
-
+          <li class="active"><a href="{{route('audit.index')}}">Auditoria</a></li>
           <li class="active"><a href="{{route('supplier.index')}}">Proveedores</a></li>
           <li class="active"><a href="{{route('color.index')}}">Colores</a></li>
           <li class="active"><a href="{{route('typeproduct.index')}}">Tipo Producto</a></li>
@@ -90,6 +90,7 @@
           <li class="active"><a href="{{route('typeshipping.index')}}">Tipo Envio</a>
           <li class="active"><a href="{{route('typeactive.index')}}">Tipo Activo</a></li>
           <li class="active"><a href="{{route('typepay.index')}}">Tipo Pago</a></li>
+          <li class="active"><a href="{{route('role.index')}}">Roles</a></li>
           <li class="active"><a href="{{route('client.index')}}">Clientes</a></li>
           <li class="active"><a href="{{route('branchoffice.index')}}">Surcusales</a></li
             >
