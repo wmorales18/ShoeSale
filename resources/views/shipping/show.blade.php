@@ -142,7 +142,7 @@
 	          <th>ID</th>
 	          <th>Cantidad</th>
 	          <th>Producto</th>
-	          <th>Tipo Envio</th>
+	          <th>Estatus</th>
 	          <th>Opciones</th>
 	        </tr>
 	      </thead>
@@ -151,7 +151,7 @@
 	         <th>ID</th>
 	          <th>Cantidad</th>
 	          <th>Producto</th>
-	          <th>Tipo Envio</th>
+	          <th>Estatus</th>
 	          <th>Opciones</th></tr>
 	      </tfoot>
 	      <tbody>
