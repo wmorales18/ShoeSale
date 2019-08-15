@@ -114,7 +114,6 @@ class DetailBillController extends Controller
           $request->validate([
            'quantity' => 'required',
             'bill_id' => 'required',
-            'subtotal' => 'required',
             'product_inventory_id' => 'required'
                     ]);
 
